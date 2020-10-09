@@ -66,12 +66,55 @@ div.header-buttom{
     margin-top: 60px;
     float: left;
 }
-div.header-buttom a{
+div.header-buttom a.wwu{
     color: white;
     font-size: 18px;
     text-decoration: none;
     padding: 28px 81px;
     background-color: #eb7d4b;
+}
+
+/*MODAL*/
+.modal-contenido a{
+    font-size: 20px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    text-decoration: none;
+    color: black;
+}
+.modal-contenido a:hover {
+    color: red;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.modal-contenido {
+    background-color: #787276;
+    width:300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.modal {
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 0s;
+}
+
+#miModal:target {
+    opacity:1;
+    pointer-events:auto;
 }
 
 /*MAIN CONTENT*/
